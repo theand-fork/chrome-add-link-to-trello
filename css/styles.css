@@ -1,22 +1,27 @@
 * {
     box-sizing: border-box;
 }
+
 a {
     color: #333;
 }
+
 body {
     overflow-x: hidden;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     padding: 0;
     background: #f0f0f0;
 }
+
 body.popup {
     min-width: 240px;
 }
+
 .options form {
     width: 600px;
     margin: 40px auto;
 }
+
 label {
     font-weight: bold;
     clear: both;
@@ -28,10 +33,10 @@ label {
     margin: 0 2px 0 0;
     min-height: 18px;
 }
+
 input, select {
     width: 100%;
     display: block;
-
     background-color: #fff;
     border: 1px solid #d3d3d3;
     border-bottom-color: #bbb;
@@ -43,10 +48,12 @@ input, select {
     outline: 0;
     min-height: 30px;
 }
+
 .popup input {
     width: 100%;
     margin-bottom: 10px;
 }
+
 button {
     outline: 0;
     background: #24a828;
@@ -71,8 +78,8 @@ button {
     padding-top: 5px;
     padding-bottom: 5px;
 }
-button:hover,
-button:active {
+
+button:hover, button:active {
     background: #1f9323;
     background: -webkit-linear-gradient(top, #1f9323 0%, #166919 100%);
     background: linear-gradient(to bottom, #1f9323 0%, #166919 100%);
@@ -83,14 +90,17 @@ ul {
     padding: 0;
     list-style: none;
 }
+
 li {
     margin: 0 0 10px;
 }
+
 p {
     font-size: 12px;
     line-height: 1.4;
-    color:#555;
+    color: #555;
 }
+
 p em {
     background-color: #fff;
 }
@@ -99,10 +109,12 @@ p em {
     width: 600px;
     margin: 100px auto 0;
 }
+
 .footer p {
-   line-height: 1;
-   color: #999;
+    line-height: 1;
+    color: #999;
 }
+
 .footer a {
     color: #333;
 }

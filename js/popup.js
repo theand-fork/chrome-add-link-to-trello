@@ -1,15 +1,15 @@
-document.addEventListener('DOMContentLoaded', function () {
-    $('#board').val(localStorage.board||null);
-    $('#list').val(localStorage.list||null);
+document.addEventListener('DOMContentLoaded', function() {
+    $('#board').val(localStorage.board || null);
+    $('#list').val(localStorage.list || null);
 });
 
-document.addEventListener('Trelloready', function () {
+document.addEventListener('Trelloready', function() {
 
     Trello.authorize(options.trello_options);
-    Trello.get('boards/'+localStorage.board, function(board){
+    Trello.get('boards/' + localStorage.board, function(board) {
         $('#boardtext').text(board.name);
     });
-    Trello.get('lists/'+localStorage.list, function(list){
+    Trello.get('lists/' + localStorage.list, function(list) {
         $('#listtext').text(list.name);
     });
 
@@ -25,7 +25,7 @@ document.addEventListener('Trelloready', function () {
             token: localStorage.trello_token
         };
 
-        Trello.post('cards', data).done(function(){
+        Trello.post('cards', data).done(function() {
             window.close();
         });
     });
@@ -34,11 +34,17 @@ document.addEventListener('Trelloready', function () {
         e.preventDefault();
         var optionsUrl = chrome.extension.getURL('options.html');
 
-        chrome.tabs.query({url: optionsUrl}, function(tabs) {
+        chrome.tabs.query({
+            url: optionsUrl
+        }, function(tabs) {
             if (tabs.length) {
-                chrome.tabs.update(tabs[0].id, {active: true});
+                chrome.tabs.update(tabs[0].id, {
+                    active: true
+                });
             } else {
-                chrome.tabs.create({url: optionsUrl});
+                chrome.tabs.create({
+                    url: optionsUrl
+                });
             }
         });
     });

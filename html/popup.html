@@ -1,32 +1,35 @@
 <!doctype html>
 <html>
-    <head>
-        <title>Getting Started Extension's Popup</title>
-        <link rel="stylesheet" href="../css/styles.css" />
-    </head>
-    <body class="popup">
-        <form>
-            <label>
+
+<head>
+    <title>Getting Started Extension's Popup</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body class="popup">
+    <form>
+        <label>
                 Title
             </label>
-            <input id="title" type="text" />
+        <input id="title" type="text" />
 
-            <label>
+        <label>
                 Link
             </label>
-            <input id="url" type="text" />
+        <input id="url" type="text" />
 
-            <input id="board" type="hidden" />
-            <input id="list" type="hidden" />
+        <input id="board" type="hidden" />
+        <input id="list" type="hidden" />
 
-            <p>
-                This link will be added to the list <em id="listtext"></em> on the <em id="boardtext"></em>. <a href="#" id="options">Change this?</a>
-            </p>
+        <p>
+            This link will be added to the list <em id="listtext"></em> on the <em id="boardtext"></em>. <a href="#" id="options">Change this?</a>
+        </p>
 
-            <button id="submit" tabindex="1">Send to Trello</button>
-        </form>
-        <script src="../js/jquery-2.0.2.min.js"></script>
-        <script src="../js/client.js"></script>
-        <script src="../js/popup.js"></script>
-    </body>
+        <button id="submit" tabindex="1">Send to Trello</button>
+    </form>
+    <script src="../js/jquery-2.0.2.min.js"></script>
+    <script src="../js/client.js"></script>
+    <script src="../js/popup.js"></script>
+</body>
+
 </html>
