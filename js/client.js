@@ -8,7 +8,7 @@ $.getScript(scripturl, function(){
 var options = {
     trello_options: function () {
         options = {};
-        options.name = "Chrome add link to Trello";
+        options.name = "Chrome add link to Trello-revised";
         options.persist = true;
         options.interactive = true;
         options.expiration = "never";
