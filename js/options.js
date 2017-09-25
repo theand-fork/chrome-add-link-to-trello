@@ -72,6 +72,7 @@ var updateLists = function(boardid) {
     });
     $('.needsapi').show();
 };
+
 $boards.on('change', function(e) {
     updateLists($(e.target).children(':selected').attr('id'));
 });
@@ -80,6 +81,7 @@ $boards.on('change', function(e) {
 document.addEventListener('DOMContentLoaded', function() {
     restore_options();
 });
+
 $('#save').on('click', function(e) {
     e.preventDefault();
     save_options();
